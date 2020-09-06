@@ -13,6 +13,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 - Added warning when dropping unpicklable `hparams` ([#2874](https://github.com/PyTorchLightning/pytorch-lightning/pull/2874))
 
+- Added EMB similarity ([#3349](https://github.com/PyTorchLightning/pytorch-lightning/pull/3349))
+
 ### Changed
 
 - Refactored accelerator backends:
@@ -58,6 +60,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
         [#3312](https://github.com/PyTorchLightning/pytorch-lightning/pull/3312),
         [#3313](https://github.com/PyTorchLightning/pytorch-lightning/pull/3313),
         [#3314](https://github.com/PyTorchLightning/pytorch-lightning/pull/3314))
+   * duplicate data interface definition up into DataHooks class ([#3344](https://github.com/PyTorchLightning/pytorch-lightning/pull/3344))
+   * inner train loop (intermediate step) ([#3359](https://github.com/PyTorchLightning/pytorch-lightning/pull/3359),
+        [#3361](https://github.com/PyTorchLightning/pytorch-lightning/pull/3361),
+        [#3362](https://github.com/PyTorchLightning/pytorch-lightning/pull/3362),
+        [#3363](https://github.com/PyTorchLightning/pytorch-lightning/pull/3363),
+        [#3365](https://github.com/PyTorchLightning/pytorch-lightning/pull/3365),
+        [#3366](https://github.com/PyTorchLightning/pytorch-lightning/pull/3366),
+        [#3367](https://github.com/PyTorchLightning/pytorch-lightning/pull/3367),
+        [#3368](https://github.com/PyTorchLightning/pytorch-lightning/pull/3368),
+        [#3369](https://github.com/PyTorchLightning/pytorch-lightning/pull/3369),
+        [#3370](https://github.com/PyTorchLightning/pytorch-lightning/pull/3370))
 
 - Renaming of precision recall metric ([#3308](https://github.com/PyTorchLightning/pytorch-lightning/pull/3308))
 
@@ -86,6 +99,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Fixed change `t()` to `transpose()` as XLA devices do not support `.t()` on 1-dim tensor ([#3252](https://github.com/PyTorchLightning/pytorch-lightning/pull/3252))
 
 - Fixed (weights only) checkpoints loading without PL ([#3287](https://github.com/PyTorchLightning/pytorch-lightning/pull/3287))
+
+- Fixed `gather_all_tensors` cross GPUs in DDP ([#3319](https://github.com/PyTorchLightning/pytorch-lightning/pull/3319))
 
 ## [0.9.0] - 2020-08-20
 
